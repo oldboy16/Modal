@@ -1,0 +1,70 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-style: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+ul,ol{
+    list-style-type: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.modal{
+    transition: all ease 0.5s;
+    position: fixed;
+    left: 30%;
+    top: -250px;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: white;
+    z-index: 3;
+}
+.modal__open{
+    top: 200px;
+}
+.modal p{
+    margin-top: 50px;
+}
+.modal__footer{
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+}
+button{
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid green;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+button:hover{
+    opacity: 0.8;
+}
+button:active{
+    opacity: 1;
+}
+.modal__shadow{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.555);
+    display: none;
+    z-index: 2;
+}
